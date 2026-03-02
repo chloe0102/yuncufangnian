@@ -1,0 +1,38 @@
+site_name: 雲簇芳年
+
+theme:
+  name: material
+  language: zh-TW
+  palette:
+    scheme: default
+    primary: green
+    accent: teal
+  font:
+    text: Noto Serif TC
+    code: Noto Sans Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+nav:
+  - 世界觀: index.md
+  - 周國:
+      - 入口: zhou/index.md
+      - 後宮:
+          - 名冊總覽: zhou/harem/index.md
+          - 後宮玩家: zhou/harem/players/index.md
+          - 後宮主要NPC: zhou/harem/main-npc/index.md
+          - 後宮工具人: zhou/harem/tools/index.md
+          - 後宮工具人（按家族）: zhou/harem/tools/clans/index.md
+      - 世家:
+          - 世家家族總覽: zhou/clans/index.md
+          - 世家玩家: zhou/nobles/players/index.md
+          - 世家主要NPC: zhou/nobles/main-npc/index.md
+          - 世家工具人: zhou/nobles/tools/index.md
+          - 世家工具人（按家族）: zhou/nobles/tools/clans/index.md
+      - 其他NPC: zhou/other-npc/index.md
