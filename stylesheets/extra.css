@@ -1,0 +1,427 @@
+/* ===== 全站字體：宋體 ===== */
+:root {
+    --md-text-font: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
+}
+
+/* 版心：像書頁，不要太寬 */
+.md-grid {
+    max-width: 1100px;
+}
+
+/* 內容字級與行距 */
+.md-typeset {
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* H1：不要字距太大，不然會像散字 */
+.md-typeset h1 {
+    text-align: center;
+    letter-spacing: .12em;
+    border-bottom: 1px solid rgba(0, 0, 0, .22);
+    padding-bottom: .45em;
+    margin-bottom: .9em;
+}
+
+/* H2：章節感 */
+.md-typeset h2 {
+    border-left: 4px solid rgba(107, 79, 42, .85);
+    padding-left: .6em;
+    margin-top: 1.8em;
+}
+
+/* 宣紙底 */
+.md-main {
+    background: #f7f3ea;
+}
+
+/* 分隔線 */
+.md-typeset hr {
+    border-top: 1px dashed rgba(139, 125, 107, .9);
+}
+
+/* ===== 角色面板：圖左文右 ===== */
+.char-sheet {
+    display: grid;
+    /* 左欄彈性、右欄有最小寬度，避免字被擠成直排 */
+    grid-template-columns: minmax(280px, 360px) minmax(420px, 1fr);
+    gap: 26px;
+    align-items: start;
+    margin-top: 14px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .55);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .08);
+}
+
+/* 左側圖片：加上高度上限，避免過高 */
+.char-sheet .char-portrait {
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .16);
+    display: block;
+}
+
+/* 右側標籤：改成「橫向案頭牌」，不要圓泡泡 */
+.char-meta {
+    display: inline-block;
+    width: fit-content;
+    padding: .35rem .9rem;
+    border: 1px solid rgba(0, 0, 0, .16);
+    border-radius: 12px;
+    /* ← 重點：不要 999px */
+    background: rgba(255, 255, 255, .75);
+    letter-spacing: .06em;
+    font-size: 1rem;
+    margin: 0 0 14px 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .06);
+}
+
+/* 連結不要底線太突兀 */
+.char-meta a {
+    text-decoration: none;
+}
+
+/* 內文排版更像案卷 */
+.char-body {
+    line-height: 1.85;
+    font-size: 17px;
+}
+
+/* 清單更整齊（你的〈誕辰〉那種） */
+.char-body ul {
+    margin: .4rem 0 0 1.2rem;
+}
+
+.char-body li {
+    margin: .25rem 0;
+}
+
+/* 小裝飾分隔線 */
+.char-divider {
+    border-top: 1px dashed rgba(90, 70, 40, .45);
+    margin: 14px 0;
+}
+
+/* 右側卷首題簽 */
+.char-alias {
+    font-weight: 700;
+    letter-spacing: .06em;
+    margin: 6px 0 12px 0;
+}
+
+/* 條目（誕辰/容貌/家族）排成兩欄：左為題、右為內容 */
+.char-dl {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    gap: 10px 14px;
+    margin: 10px 0 18px 0;
+    padding: 12px 14px;
+    border: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .55);
+}
+
+.char-dl dt {
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: rgba(60, 45, 25, .92);
+    align-self: start;
+}
+
+.char-dl dd {
+    margin: 0;
+    color: rgba(0, 0, 0, .82);
+}
+
+/* 關係清單更像檔案附錄 */
+.char-rel {
+    margin: 10px 0 0 0;
+    padding-left: 18px;
+}
+
+.char-rel li {
+    margin: .35rem 0;
+}
+
+/* 防止右欄內容把卡片撐破 */
+.char-sheet>div,
+.char-body {
+    min-width: 0;
+    /* 讓 grid item 可以縮，不然會溢出 */
+}
+
+.char-dl {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* 保險：不讓內容溢出框外 */
+}
+
+/* 右側內容一定要能換行（含連結） */
+.char-dl dd,
+.char-dl dd a,
+.char-body {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* ===== 單欄角色頁（由上到下） ===== */
+.char-page {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 圓形頭像（你也可以換成方圖：把 border-radius 改 16px） */
+.char-avatar {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 999px;
+    margin: 20px auto 12px auto;
+    display: block;
+    border: 6px solid rgba(255, 255, 255, .7);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+}
+
+/* 名字 */
+.char-name {
+    letter-spacing: .15em;
+    margin: 0 0 6px 0;
+}
+
+/* 身分條（國家｜位階｜家族） */
+.char-meta {
+    display: inline-block;
+    padding: .35rem .9rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .7);
+    margin: 0 auto 10px auto;
+}
+
+.char-meta a {
+    text-decoration: none;
+}
+
+/* 題簽 */
+.char-alias {
+    margin: 0 auto 14px auto;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: rgba(0, 0, 0, .75);
+}
+
+/* 條目卡（基本資訊/人物特色） */
+.char-dl {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 10px 14px;
+    margin: 12px 0 22px 0;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, .55);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, .10);
+    box-sizing: border-box;
+}
+
+.char-dl dt {
+    font-weight: 700;
+    letter-spacing: .10em;
+    color: rgba(60, 45, 25, .92);
+}
+
+.char-dl dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* 關係 */
+.char-rel {
+    text-align: left;
+    max-width: 520px;
+    margin: 12px auto 40px auto;
+    padding-left: 18px;
+}
+
+.char-rel li {
+    margin: .35rem 0;
+}
+
+/* ===== 家族族譜（clan tree） ===== */
+.clan-head {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clan-badge {
+    display: inline-block;
+    padding: .35rem .9rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .65);
+    margin-bottom: 8px;
+    letter-spacing: .06em;
+}
+
+.clan-desc {
+    color: rgba(0, 0, 0, .72);
+    margin-bottom: 6px;
+}
+
+/* 外層清單去掉圓點，像家譜 */
+.clan-tree,
+.clan-tree ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.clan-tree {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 每一個節點 */
+.clan-node {
+    margin: 10px 0;
+}
+
+/* 每一行：用格線排「稱謂/人名/備註」 */
+/* 每一行改成橫排：角色｜人名｜備註 */
+.clan-line {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 14px;
+
+    /* 關鍵：強制橫排文字，不要被奇怪斷行搞成直排 */
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    font-size: .88rem;
+}
+
+/* 年齡：跟著人名走、不換行、縮小 */
+.clan-age {
+    white-space: nowrap;
+    font-size: .40em;
+    color: rgba(0, 0, 0, .65);
+    margin-left: 6px;
+}
+
+
+
+/* 中欄：人名吃剩下空間，允許換行但不要變直排 */
+
+.clan-person {
+    flex: 1 1 150px;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+
+/* 右欄：備註固定上限，太長就自動掉到下一行（比一直擠成直排好看） */
+.clan-note {
+    flex: 0 1 145px;
+    color: rgba(0, 0, 0, .62);
+    font-size: .60rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* 角色欄位 */
+.clan-role {
+    font-weight: 800;
+    letter-spacing: .10em;
+    color: rgba(60, 45, 25, .92);
+    white-space: nowrap;
+}
+
+
+/* 子代縮排 + 家譜感 */
+.clan-node>ul {
+    margin-top: 10px;
+    margin-left: 26px;
+    padding-left: 16px;
+    border-left: 2px solid rgba(90, 70, 40, .18);
+}
+
+/* 妻妾行：淡一點 */
+.clan-node.spouse .clan-line {
+    background: rgba(255, 255, 255, .42);
+}
+
+/* 連結 */
+.clan-line a {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(90, 70, 40, .35);
+}
+
+.clan-line a:hover {
+    border-bottom-color: rgba(90, 70, 40, .7);
+}
+
+/* 手機版：備註改到下一行 */
+@media (max-width: 900px) {
+    .clan-line {
+        flex-wrap: wrap;
+    }
+
+    .clan-note {
+        flex: 1 1 100%;
+        margin-left: 90px;
+        /* 對齊人名欄起點 */
+    }
+}
+
+/* ===== 事件解鎖 ===== */
+.event-block {
+    text-align: left;
+    margin: 12px auto 40px auto;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 16px;
+}
+
+.event-year {
+    font-weight: 700;
+    letter-spacing: .08em;
+    margin: 14px 0 8px 0;
+    color: rgba(60, 45, 25, .92);
+}
+
+.event-list {
+    margin: 0 0 6px 0;
+    padding-left: 18px;
+}
+
+.event-list li {
+    margin: .55rem 0;
+    line-height: 1.7;
+}
+
+.event-link {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(90, 70, 40, .35);
+    margin-right: .5em;
+}
+
+.event-link:hover {
+    border-bottom-color: rgba(90, 70, 40, .75);
+}
+
+.event-desc {
+    color: rgba(0, 0, 0, .72);
+}
