@@ -1,3 +1,32 @@
+/* ===== 整體背景 ===== */
+
+body {
+    background: #faf8ff;
+}
+
+
+/* ===== 導覽列 ===== */
+
+.md-header {
+    background: #8e79c6;
+}
+
+
+/* ===== 章節標題 ===== */
+
+h1 {
+    color: #5e4a9d;
+}
+
+h2 {
+    color: #6d5aad;
+}
+
+h3 {
+    color: #7b68b3;
+}
+
+
 /* ===== 全站字體：宋體 ===== */
 :root {
     --md-text-font: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
