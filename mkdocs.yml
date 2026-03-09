@@ -33,3 +33,10 @@ nav:
           - 世家玩家: zhou/nobles/players/index.md
           - 世家主要NPC: zhou/nobles/main-npc/index.md
       - 其他NPC: zhou/other-npc/index.md
+  - 殷國:
+      - 入口: yin/index.md
+      - 世家:
+          - 世家家族總覽: yin/clans/index.md
+      - NPC:
+          - NPC總覽: yin/npc/index.md
+
