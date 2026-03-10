@@ -454,3 +454,31 @@ h3 {
 .event-desc {
     color: rgba(0, 0, 0, .72);
 }
+
+.world-intro {
+    padding: 1.2rem 1.4rem;
+    border-left: 4px solid var(--md-primary-fg-color);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem;
+    line-height: 1.9;
+    margin: 1rem 0 1.5rem;
+}
+
+.char-grid.cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.char-card {
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .72);
+}
+
+.char-card-title {
+    font-weight: 700;
+    margin-bottom: .45rem;
+}
