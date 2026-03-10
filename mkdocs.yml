@@ -20,9 +20,9 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - 世界觀: index.md
+  - 首頁: index.md
   - 周國:
-      - 入口: zhou/index.md
+      - 簡介: zhou/index.md
       - 後宮:
           - 後宮玉碟: zhou/harem/index.md
           - 後宮玩家: zhou/harem/players/index.md
@@ -34,7 +34,7 @@ nav:
           - 世家主要NPC: zhou/nobles/main-npc/index.md
       - 其他NPC: zhou/other-npc/index.md
   - 殷國:
-      - 入口: yin/index.md
+      - 簡介: yin/index.md
       - 世家:
           - 世家家族總覽: yin/clans/index.md
       - NPC:
