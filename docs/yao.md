@@ -49,7 +49,3 @@
 - [姚映荷](/yuncufangnian/zhou/nobles/tools/姚映荷.md)
 - [張霓瓊](/yuncufangnian/zhou/nobles/tools/張霓瓊.md)
 - [虞萩遲](/yuncufangnian/zhou/nobles/tools/虞萩遲.md)
-
-### 殷國NPC
-- [殷妏翡](/yuncufangnian/yin/npc/殷妏翡.md)
-- [殷斕序](/yuncufangnian/yin/npc/殷斕序.md)
