@@ -20,7 +20,7 @@
 - [陸今安](/yuncufangnian/zhou/other-npc/陸今安.md)
 - [緣　一](/yuncufangnian/zhou/other-npc/緣一.md)
 - [步晏璿](/yuncufangnian/zhou/other-npc/步晏璿.md)
-- [紅袖](/yuncufangnian/zhou/other-npc/紅袖.md)
+- [紅　袖](/yuncufangnian/zhou/other-npc/紅袖.md)
 
 
 ### 殷國NPC
