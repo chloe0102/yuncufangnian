@@ -482,3 +482,16 @@ h3 {
     font-weight: 700;
     margin-bottom: .45rem;
 }
+
+.history-block {
+    margin: 1rem 0 1.4rem 0;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--md-primary-fg-color);
+    background: rgba(0, 0, 0, .03);
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+.history-block ul {
+    margin-top: .5rem;
+}
