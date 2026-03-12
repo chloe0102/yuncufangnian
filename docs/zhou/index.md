@@ -37,7 +37,11 @@
 
 - [前朝](lianguo.md)
 - [定元帝](dingyuan.md)
-
+- [盛和帝](chenghe.md)
+- [隆昌帝](rongchang.md)
+- [熙箴帝](xizhen.md)
+- [秦宣帝](qinxuan.md)
+- [康璟帝](kangjing.md)
 ---
 
 ## 州府地誌
