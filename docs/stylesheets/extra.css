@@ -495,3 +495,19 @@ h3 {
 .history-block ul {
     margin-top: .5rem;
 }
+
+.history-item {
+    margin: 0.9rem 0;
+    padding: 0.95rem 1.1rem;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .72);
+    line-height: 1.9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .03);
+}
+
+.md-typeset h3 {
+    margin-top: 1.8rem;
+    padding-bottom: .35rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
