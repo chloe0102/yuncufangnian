@@ -17,7 +17,7 @@
 ### 熙箴二年
 
 <div class="history-item">
-周佑採納右相董禩之議，命國子監開恩科取士。
+周佑採納左相董禩之議，命國子監開恩科取士。
 </div>
 
 <div class="history-item">
